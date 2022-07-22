@@ -6,32 +6,10 @@ const Card = ({results}) => {
 
     if (results) {
         display = results.map((x) => {
-            let {id, image, name, status, location} = x;
+            let {id, image, name, status, location} = x;        
 
             return (
-                // {
-                //     (() => {
-                //     if (status === "Dead") {
-                //         return (
-                //             <div className={`${styles.badge} position-absolute badge bg-danger`}>
-                //                 {status}
-                //             </div>
-                //         );
-                //     } else if (status === "Alive") {
-                //         return (
-                //             <div className={`${styles.badge} position-absolute badge bg-success`}>
-                //                 {status}
-                //             </div>
-                //         );
-                //     } else {
-                //         return (
-                //             <div className={`${styles.badge} position-absolute badge bg-secondary`}>
-                //                 {status}
-                //             </div>
-                //         );
-                //     }
-                // })()
-                // }
+                
 
                 <div
                     key = {id}
@@ -47,11 +25,32 @@ const Card = ({results}) => {
                             </div>
                         </div>
                     </div>
-                </div>
+
+                    {(() => {
+                    if (status === "Dead") {
+                        return (
+                            <div className={`${styles.badge} position-absolute badge bg-danger`}>
+                                {status}
+                            </div>
+                        );
+                    } else if (status === "Alive") {
+                        return (
+                            <div className={`${styles.badge} position-absolute badge bg-success`}>
+                                {status}
+                            </div>
+                        );
+                    } else {
+                        return (
+                            <div className={`${styles.badge} position-absolute badge bg-secondary`}>
+                                {status}
+                            </div>
+                        );
+                    }
+                    })()}
+                </div>     
             );
         });
-    }
-    else {
+    }else {
         display = "No characters found :("
     }
 
