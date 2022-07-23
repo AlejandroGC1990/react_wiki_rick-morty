@@ -5,7 +5,7 @@ import Card from "./components/Card/Card";
 
 // import Filter from "./components/Filter/Filter";
 // import Navbar from "./components/Navbar/Navbar";
-// import Pagination from "./components/Pagination/Pagination";
+import Pagination from "./components/Pagination/Pagination";
 import Search from "./components/Search/Search";
 
 
@@ -39,6 +39,11 @@ function App() {
           </div>
         </div>
       </div>
+      <Pagination
+        info={info}
+        pageNumber={pageNumber}
+        updatePageNumber={updatePageNumber}
+      />
     </div>
   );
 }
