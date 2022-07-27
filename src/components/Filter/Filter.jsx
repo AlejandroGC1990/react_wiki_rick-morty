@@ -1,6 +1,6 @@
 import React from "react";
 // import Gender from "./Category/Gender";
-// import Species from "./Category/Species";
+import Species from "./Category/Species";
 import Status from "./Category/Status";
 
 const Filter = ({
@@ -30,12 +30,15 @@ const Filter = ({
                 Clear Filters
             </div>        
             <div className="accordion" id="accordionExample">
-                {/* <Gender/>
-                <Species/> */}
+                {/* <Gender/>*/}
                 <Status
                     updatePageNumber={updatePageNumber}
                     updateStatus={updateStatus}
                 />
+                <Species
+                    updatePageNumber={updatePageNumber}
+                    updateStatus={updateStatus}
+                /> 
             </div>
         </div>
     )

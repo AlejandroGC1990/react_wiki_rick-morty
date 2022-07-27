@@ -39,7 +39,8 @@ function App() {
           updateStatus={updateStatus}
           updateSpecies={updateSpecies}
           updatePageNumber={updatePageNumber}
-        />
+        /> 
+        {/* NO SE ABRE LA PESTAÑA DE "SPECIES" */}
           <div className="col-lg-8 col-12">
             <div className="row">
               <Card results={results} />

@@ -5,7 +5,10 @@ const Status = ({updateStatus, updatePageNumber}) => {
 
     return(
         <div className="accordion-item">
-            <h2 className="accordion-header" id="headingOne">
+            <h2 
+                className="accordion-header" 
+                id="headingOne"
+            >
                 <button
                     className="accordion-button"
                     type="button"
