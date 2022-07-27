@@ -1,7 +1,7 @@
 import React from "react";
 // import Gender from "./Category/Gender";
 // import Species from "./Category/Species";
-// import Status from "./Category/Status";
+import Status from "./Category/Status";
 
 const Filter = ({
     pageNumber, 
@@ -31,8 +31,11 @@ const Filter = ({
             </div>        
             <div className="accordion" id="accordionExample">
                 {/* <Gender/>
-                <Species/>
-                <Status/> */}
+                <Species/> */}
+                <Status
+                    updatePageNumber={updatePageNumber}
+                    updateStatus={updateStatus}
+                />
             </div>
         </div>
     )

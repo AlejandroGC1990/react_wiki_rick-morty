@@ -30,16 +30,16 @@ function App() {
     <div className="App">
       <h1 className="text-center mb-3">Characters</h1>
       <Search setSearch={setSearch} updatePageNumber={updatePageNumber}/>
-      <Filter
-        pageNumber={pageNumber}
-        status={status}
-        updateStatus={updateStatus}
-        updateSpecies={updateSpecies}
-        updatePageNumber={updatePageNumber}
-      />
+      
       <div className="container">
         <div className="row">
-          Filter component will be placed here
+        <Filter
+          pageNumber={pageNumber}
+          status={status}
+          updateStatus={updateStatus}
+          updateSpecies={updateSpecies}
+          updatePageNumber={updatePageNumber}
+        />
           <div className="col-lg-8 col-12">
             <div className="row">
               <Card results={results} />
