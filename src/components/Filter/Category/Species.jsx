@@ -8,7 +8,9 @@ const Species = ({updateSpecies, updatePageNumber}) => {
     
     return(
         <div className="accordion-item ">
-            <h2 className="accordion-header" id="headingTwo">
+            <h2 
+                className="accordion-header" 
+                id="headingTwo">
                 <button
                     className="accordion-button collapsed" 
                     type="button"
@@ -28,11 +30,12 @@ const Species = ({updateSpecies, updatePageNumber}) => {
                     {species.map((item, index) => {
                     return (
                         <FilterBTN
-                        index={index} 
-                        key={index}
-                        name="species" 
-                        task={updateSpecies} input={item}
-                        updatePageNumber={updatePageNumber}
+                            index={index} 
+                            input={item}
+                            key={index}
+                            name="species" 
+                            task={updateSpecies} 
+                            updatePageNumber={updatePageNumber}
                         />
                     );
                     })}
