@@ -27,12 +27,12 @@ const Status = ({updateStatus, updatePageNumber}) => {
                 <div className="accordion-body d-flex flex-wrap gap-3">
                     {status.map((item, index) => (
                         <FilterBTN
-                            key={index}
                             index={index}
+                            input={item}
+                            key={index}
                             name="status"
                             task={updateStatus}
                             updatePageNumber={updatePageNumber}
-                            input={item}
                         />
                     ))}
                 </div>

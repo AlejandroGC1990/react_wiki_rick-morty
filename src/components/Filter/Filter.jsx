@@ -37,7 +37,7 @@ const Filter = ({
                 />
                 <Species
                     updatePageNumber={updatePageNumber}
-                    updateStatus={updateStatus}
+                    updateSpecies={updateSpecies}
                 /> 
             </div>
         </div>
