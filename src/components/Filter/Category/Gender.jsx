@@ -5,7 +5,9 @@ const Gender = ({updateGender, updatePageNumber}) => {
 
     return(
         <div className="accordion-item">
-            <h2 className="accordion-header" id="headingThree">
+            <h2 
+                className="accordion-header" 
+                id="headingThree">
                 <button
                     className="accordion-button collapsed" 
                     type="button"
@@ -25,12 +27,12 @@ const Gender = ({updateGender, updatePageNumber}) => {
                 {genders.map((items, index) => {
                     return (
                         <FilterBTN
-                            name="gender" 
                             index={index} 
-                            key={index}
-                            updatePageNumber={updatePageNumber}
-                            task={updateGender} 
                             input={items}
+                            key={index}
+                            name="gender" 
+                            task={updateGender} 
+                            updatePageNumber={updatePageNumber}
                         />
                     );
                 })}
