@@ -3,12 +3,12 @@ import "bootstrap/dist/js/bootstrap";
 import React, { useState, useEffect } from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import Card from "./components/Card/Card";
 import Episodes from "./Pages/Episodes";
-import Filter from "./components/Filter/Filter";
-import Location from "./Pages/Location"
-import Pagination from "./components/Pagination/Pagination";
+// import Location from "./Pages/Location"
 import Search from "./components/Search/Search";
+import Filter from "./components/Filter/Filter";
+import Card from "./components/Card/Card";
+import Pagination from "./components/Pagination/Pagination";
 
 function App() {
   <Router>
@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/episodes" element={<Episodes/>}/>
-        <Route path= "/location" elemental={<Location/>}/>
+        {/* <Route path= "/location" elemental={<Location/>}/> */}
       </Routes>
   </Router>
 }
