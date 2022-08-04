@@ -16,7 +16,7 @@ const Episodes = () => {
       setInfo(data);
 
       let a = await Promise.all(
-        data.character.map((x) => {
+        data.characters.map((x) => {
           return fetch(x).then((res) => res.json());
         })
       );

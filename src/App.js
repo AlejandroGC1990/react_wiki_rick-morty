@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Episodes from "./Pages/Episodes";
-// import Location from "./Pages/Location"
+import Location from "./Pages/Location"
 import Search from "./components/Search/Search";
 import Filter from "./components/Filter/Filter";
 import Card from "./components/Card/Card";
@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/episodes" element={<Episodes/>}/>
-        {/* <Route path= "/location" elemental={<Location/>}/> */}
+        <Route path= "/location" elemental={<Location/>}/>
       </Routes>
   </Router>
 }
