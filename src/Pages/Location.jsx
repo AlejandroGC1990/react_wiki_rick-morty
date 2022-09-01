@@ -28,8 +28,10 @@ const Location = () => {
     <div className="container">
       <div className="row mb-3">
         <h1 className="text-center mb-3">
-          {name === "" ? "Unknown" : name}
-          <span className="text-primary">{name === "" ? "Unknown" : name}</span>
+          Location :
+          <span className="text-primary">
+            {name === "" ? "Unknown" : name}
+          </span>
         </h1>
         <h5 className="text-center">
           Dimension: {dimension === "" ? "Unknown" : dimension}
@@ -37,12 +39,14 @@ const Location = () => {
       </div>
       <div className="row">
         <div className="col-lg-3 col-12 mb-4">
-          <h6 className="text-center">Type: {type === "" ? "Unknown" : type}</h6>
+          <h6 className="text-center">
+            Type: {type === "" ? "Unknown" : type}
+          </h6>
           <InputGroup name="Location" changeID={setNumber} total={126} />
         </div>
         <div className="col-lg-8 col-12">
           <div className="row">
-            <Card page="/episodes/" results={results} />
+            <Card page="/location/" results={results} />
           </div>
         </div>
       </div>

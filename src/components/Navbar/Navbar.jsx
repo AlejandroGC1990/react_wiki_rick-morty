@@ -10,14 +10,15 @@ const Navbar = () => {
         </Link>
         <style jsx>
           {`
-                    button[aria-expanded="false"] > .close {
-                        display: none;
-                    &rbrace;
-                    button[aria-expanded="true"] > .open {
-                        display: none;
-                    }
-                `}
+              button[aria-expanded="false"] > .close {
+                display: none;
+              }
+              button[aria-expanded="true"] > .open {
+                display: none;
+              }
+          `}
         </style>
+
         <button
           className="navbar-toggler border-0"
           type="button"
@@ -30,6 +31,7 @@ const Navbar = () => {
           <span class="fas fa-bars open text-dark"></span>
           <span class="fas fa-times close text-dark"></span>
         </button>
+        
         <div
           className="collapse navbar-collapse justify-content-end"
           id="navbarNavAltMarkup"
