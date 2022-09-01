@@ -1,14 +1,3 @@
-#Elements used to create this project are:
-
-React Hooks (useState, useEffect)
-React Components
-Fetch API
-Bootstrap - for styles
-Pagination
-Search bar
-Data filtering
-Dynamic routing
-
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
