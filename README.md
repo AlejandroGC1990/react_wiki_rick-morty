@@ -1,70 +1,81 @@
-## Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Rick&Morty - WikiApp
 
-### Available Scripts
 
-In the project directory, you can run:
+Este proyecto es una aplicación web desarrollada en ReactJS que consume la API de Rick & Morty para mostrar información sobre los personajes de la serie. Los usuarios pueden explorar información detallada sobre cada personaje, incluyendo su estado vital, género, ubicación, origen y especie. Además, la aplicación permite buscar personajes por diferentes criterios, como nombre, localización, características y episodio. Al hacer clic en cada tarjeta de personaje, los usuarios son redirigidos a una página detallada que muestra la foto y datos específicos del personaje.
 
-#### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Índice
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. [Tecnologías utilizadas](#tecnologías-utilizadas)
+2. [Características](#características)
+3. [Screenshots](#screenshots)
+4. [Instalación del proyecto en local](#instalación-del-proyecto-en-local)
+5. [Soporte Adicional](#soporte-adicional)
 
-#### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologías utilizadas
 
-#### `npm run build`
+- ReactJS
+- React Router
+- HTML5
+- CSS3
+- JavaScript (ES6+)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Características
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Visualización de información detallada de los personajes de Rick & Morty.
+- Búsqueda de personajes por nombre, localización, características y episodio.
+- Navegación intuitiva entre páginas de personajes.
+- Diseño responsive para una experiencia óptima en dispositivos móviles y de escritorio.
 
-#### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Screenshots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Pantalla de inicio](./public/home.jpg)
+*Pantalla de inicio con lista de personajes.*
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Detalle del personaje](./public/characterPage.jpg)
+*Detalle del personaje con información específica.*
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Filtrado por episodio](./public/episodeFilter.jpg)
+*Filtrar personaje por episodio.*
 
-### Learn More
+![Filtrado por localización](./public/locationFilter.png)
+*Filtrar personaje por localización.*
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Instalación del proyecto en local
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Para instalar y ejecutar este proyecto en tu entorno local, sigue estos pasos:
 
-#### Code Splitting
+1. Clona este repositorio en tu máquina local utilizando Git:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ```bash
+    git clone https://github.com/AlejandroGC1990/react_wiki_rick-morty.git
+    ```
 
-#### Analyzing the Bundle Size
+2. Accede al directorio del proyecto:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    ```bash
+    cd react_wiki_rick-morty
+    ```
 
-#### Making a Progressive Web App
+3. Instala las dependencias utilizando npm:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    ```bash
+    npm install
+    ```
 
-#### Advanced Configuration
+4. Inicia la aplicación:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    ```bash
+    npm start
+    ```
 
-#### Deployment
+5. Abre tu navegador web y accede a [http://localhost:3000](http://localhost:3000) para ver la aplicación en acción.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+¡Listo! Ahora deberías tener la aplicación Rick & Morty Character Viewer funcionando en tu entorno local. Disfruta explorando los personajes de esta divertida serie animada.
+## Soporte adicional
 
-#### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Si encuentras algún problema durante la instalación o configuración, por favor, ponte en contacto conmigo a través de "alejandrogc.dev@gmail.com" para obtener ayuda adicional.
